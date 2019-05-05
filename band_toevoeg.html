@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <!--- Band --->
+	<title>Band</title>
+	<style>
+	table, tr, td{
+		border: 1px solid #00492C;
+		border-collapse: collapse;
+		color: royalblue;
+	}
+	</style>
+</head>	
+<body>
+
+			<!---- Band ----->
+			<h1>Voeg aan band toe:</h1>
+	
+		<!---- Bestandnaam ----->
+		<form action="band_toevoeg_verwerk.php" method="POST">
+		 
+		   <!---- Bandnaam ---->
+			 <fieldset>
+				<legend>Bandnaam</legend>
+				<input type="text" name="Bandnaam" placeholder="Bandnaam" required>
+			
+		 
+			    <!---- Land----->			
+				<legend>Land van herkomst:</legend>
+				<input type="text" maxlength="30" name="Landnaam" placeholder="Land">
+			
+		 
+			    <!---- Aantal leden ----->			
+				<legend>Aantal leden:</legend>
+				<input type="number" min="2" max="15" name="AantalLeden" placeholder="Leden">
+			 
+			 
+				<!---- Soort muziek ----->
+				<legend>Soort muziek:</legend>
+				<input type="text" name="Muziek" placeholder="Muziek">
+			
+		 
+			 
+				<!---- Algemene info ----->
+				<legend>Algemene info:</legend><textarea name="info"></textarea>
+			   </fieldset><br>
+			    
+			 <!---- Toevoegen ---->  
+			 <input type="submit" name="VoegToe" value="VoegToe">
+			
+		<!--- Form sluiten --->		  
+		</form>
+	
+
+	
+</body>
+</html>
